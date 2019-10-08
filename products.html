@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="product.css" />
+    <title></title>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144849975-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144849975-1');
+    </script>
+
+  </head>
+  <body>
+    <div class="loading"></div>
+    <header>
+      <!--  < 768px -->
+      <div class="logo-search">
+        <input id="smallInput" type="text" name="keyword" />
+        <button id="smallCancelSearch">Back</button>
+        <a href="index.html">
+          <img id="smallLogo" class="logo" src="images/logo.png" alt="Stylish Logo"  />
+        </a>
+        <img id="smallSearch" class="search" src="images/search.png" alt="Search Icon" />
+      </div>
+      <div class="nav">
+        <nav class="container wrapper-categ">
+          <div id="categW" class="categ"><a href="index.html?categ=women">女裝</a></div>
+          <div id="categM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+          <div id="categA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+        </nav>
+        <div class="container wrapper-nav-info">
+          <div class="container shopping-cart" >
+            <img src="images/shopping-cart-normal.png" alt="Shopping Cart"/>
+            <div id="smallCart" class="nav-info">購物車
+              <div class="quantity-in-cart">0</div>
+            </div>
+          </div>
+          <div class="container member">
+            <img src="images/member-mobile.png" alt="Member"/>
+            <div class="nav-info" style="border-right: 0px;">會員</div>
+          </div>
+        </div>
+      </div>
+
+      <!--  > 768px -->
+      <div id="mediumSearchWrapper">
+        <input id="mediumInput" type="text" name="keyword" />
+        <button id="mediumCancelSearch">Back</button>
+      </div>
+      <div class="header">
+        <div class="header-left">
+          <a href="index.html">
+            <img id="mediumLogo" src="images/logo.png" alt="Stylish Logo"  />
+          </a>
+          <nav class="container">
+            <div id="categBW" class="categ" style="margin-left:20px;"><a href="index.html?categ=women">女裝</a></div>
+            <div id="categBM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+            <div id="categBA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+          </nav>
+        </div>
+        <div class="header-right">
+          <input id="bigInput" type="text" name="keyword">
+          <img id="mediumSearch" class="header-search" src="images/search.png"/>
+          <img id="bigCart" class="header-end header-cart" src="images/btn-shopping-cart-01-add.png" alt="Shopping Cart" />
+          <div class="quantity-in-cart quantity-in-cart-big">0</div>
+          <img class="header-end header-member" src="images/btn-member-01-normal.png" alt="Member" />
+        </div>
+      </div>
+      <div class="header-bottom"></div>
+    </header>
+
+    <section>
+      <div id="pro" class="pro-wrapper">
+        <!-- Product details -->
+        <div id="mainPhoto" class="main-photo">
+          <!-- Img -->
+        </div>
+
+      <div id="proInfoWrapper" class="pro-info-wrapper">
+        <!-- Details -->
+
+      </div>
+
+     <div class="pro-description" id="proDescription">
+       <!-- Discription -->
+     </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="about container">
+          <div class="about-link about-first">關於 Stylish</div>
+          <div class="about-link">服務條款</div>
+          <div class="about-link">隱私政策</div>
+          <div class="about-link">聯絡我們</div>
+          <div class="about-link about-last">FAQ</div>
+        </div>
+        <div class="sm-wrapper">
+          <img class="sm" src="images/btn-line-01-normal.png" alt="Line Icon" />
+          <img class="sm" src="images/btn-twitter-01-normal.png" alt="Twitter Icon" />
+          <img class="sm" src="images/btn-facebook-01-normal.png" alt="Facebook Icon" />
+        </div>
+      </div>
+      <div class="cr">
+        &copy 2018. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
+
+<!-- IMG -->
+<!-- <img class="main-photo-img" /> -->
+
+<!-- Details -->
+<!-- <h3>前開洋裝</h3>
+     <p>01234567</p>
+     <div class="pro-price">TWD.333</div>
+     <ul class="ul-row">
+       <li class="pro-info-colorsize">顏色</li>
+       <li class="pro-info-colorblock"></li>
+       <li class="pro-info-colorblock"></li>
+     </ul>
+     <ul class="ul-row">
+       <li class="pro-info-colorsize">尺寸</li>
+       <li class="pro-info-size">S</li>
+       <li class="pro-info-size">M</li>
+       <li class="pro-info-size">L</li>
+     </ul>
+     <!-- > 1000px class:number -->
+<!--      <ul class="ul-row ul-number">
+       <li class="pro-info-colorsize">數量</li>
+       <li>
+         <div class="li-number">
+           <img src="images/decrease.png" />
+           <span>1</span>
+           <img src="images/increase.png" />
+         </div>
+       </li>
+     </ul>
+     <!-- < 1000px class:number -->
+<!--      <div class="number">
+       <img src="images/decrease.png" />
+       <span>1</span>
+       <img src="images/increase.png" />
+     </div>
+
+     <!-- < 1000px black block -->
+<!--    <div class="size-reminder">請選擇尺寸</div>
+
+     <!-- > 1000px black block -->
+<!--    <div class="addto-cart">加入購物車</div>
+     <div class="pro-note">*食品顏色依單品為主</div>
+     <div class="pro-detail">
+       <ul class="ul-column">
+         <li>棉</li>
+         <li>厚薄</li>
+         <li>彈性</li>
+       </ul>
+       <ul class="ul-column">
+         <li>素材產地 /</li>
+         <li>加工產地 /</li>
+       </ul>
+     </div>
+   </div> -->
+
+<!-- description -->
+<!--  <div class="pro-des-top">
+        <div class="details">細部說明</div>
+        <div class="details-line"></div>
+      </div>
+
+      <div class="details-story">
+        <p>O.N.S is all about options, which is why we took our staple polo shirt and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style extra-breezy. </p>
+        <img class="story-photo" />
+        <p>O.N.S is all about options, which is why we took our staple polo shirt and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style extra-breezy. </p>
+        <img class="story-photo" />
+      </div>  -->

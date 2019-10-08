@@ -1,0 +1,124 @@
+/* Basic Style */
+@font-face {
+  font-family: AlegreyaSansSC-Light;
+  src: url(fonts/AlegreyaSansSC-Light.ttf);
+}
+@font-face {
+  font-family: AlegreyaSansSC-Thin;
+  src: url(fonts/AlegreyaSansSC-Thin.ttf);
+}
+@font-face {
+  font-family: AbhayaLibre-Bold;
+  src: url(fonts/AbhayaLibre-Bold.ttf);
+}
+
+section {
+  background-image: radial-gradient(
+    circle at top right, #f2eded 0%, #bcc1c7 70%);
+  );
+}
+.thankyou, .order-number-wrapper, .order-prepare-wrapper {
+  text-align: center;
+  color: #3f3a3a;
+}
+.thankyou {
+  font-family: AlegreyaSansSC-Thin;
+  font-size: 40px;
+  line-height: 60px;
+}
+.strong {
+  font-family: AbhayaLibre-Bold;
+  font-size: 45px;
+  letter-spacing: 6px;
+  /* color: #ac4911; */
+}
+.order-number-wrapper {
+  font-family: AlegreyaSansSC-Light;
+  font-size: 28px;
+  line-height: 40px;
+}
+.order-number {
+  color: #764d1e;
+}
+.order-prepare-wrapper {
+  font-size: 20px;
+  line-height: 35px;
+}
+.back-button {
+  background-color: #313538;
+  color: #ffffff;
+  width: 200px; height:50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Basic Layout */
+.middle-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.thankyou, .order-number-wrapper, .order-prepare-wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.animation-wrapper {
+  margin-top: 30px;
+}
+.package {
+  position: relative;
+  left: -70px;
+  width: 50px;
+  animation: package 4s ease-out infinite;
+}
+@keyframes package {
+  0% { left: -70px;}
+  100% { left: 68px;}
+}
+.home {
+  position: relative;
+  left: 70px;
+  width: 50px;
+}
+.back-button {
+  margin-top: 30px;
+}
+footer {
+  margin: 0px;
+}
+
+/* Media Query */
+@media (min-width:1000px) {
+  .thankyou {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .strong {
+    font-size: 70px;
+  }
+  .package {
+    left: -120px;
+    width: 80px;
+    animation: package 4s ease-out infinite;
+  }
+  @keyframes package {
+    0% { left: -120px;}
+    100% { left: 118px;}
+  }
+  .home {
+    left: 120px;
+    width: 80px;
+  }
+  .back-button {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+}

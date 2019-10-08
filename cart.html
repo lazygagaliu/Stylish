@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>購物車 - Stylish</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144849975-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144849975-1');
+  </script>
+
+  </head>
+  <body>
+    <div class="loading"></div>
+    <header>
+      <!--  < 768px -->
+      <div class="logo-search">
+        <input id="smallInput" type="text" name="keyword" />
+        <button id="smallCancelSearch">Back</button>
+        <a href="index.html">
+          <img id="smallLogo" class="logo" src="images/logo.png" alt="Stylish Logo"  />
+        </a>
+        <img id="smallSearch" class="search" src="images/search.png" alt="Search Icon" />
+      </div>
+      <div class="nav">
+        <nav class="container wrapper-categ">
+          <div id="categW" class="categ"><a href="index.html?categ=women">女裝</a></div>
+          <div id="categM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+          <div id="categA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+        </nav>
+        <div class="container wrapper-nav-info">
+          <div class="container shopping-cart" >
+            <img src="images/shopping-cart-normal.png" alt="Shopping Cart"/>
+            <div id="smallCart" class="nav-info">購物車
+              <div class="quantity-in-cart">0</div>
+            </div>
+          </div>
+          <div class="container member">
+            <img src="images/member-mobile.png" alt="Member"/>
+            <div class="nav-info" style="border-right: 0px;">會員</div>
+          </div>
+        </div>
+      </div>
+
+      <!--  > 768px -->
+      <div id="mediumSearchWrapper">
+        <input id="mediumInput" type="text" name="keyword" />
+        <button id="mediumCancelSearch">Back</button>
+      </div>
+      <div class="header">
+        <div class="header-left">
+          <a href="index.html">
+            <img id="mediumLogo" src="images/logo.png" alt="Stylish Logo"  />
+          </a>
+          <nav class="container">
+            <div id="categBW" class="categ" style="margin-left:20px;"><a href="index.html?categ=women">女裝</a></div>
+            <div id="categBM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+            <div id="categBA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+          </nav>
+        </div>
+        <div class="header-right">
+          <input id="bigInput" type="text" name="keyword">
+          <img id="mediumSearch" class="header-search" src="images/search.png"/>
+          <img id="bigCart" class="header-end header-cart" src="images/btn-shopping-cart-01-add.png" alt="Shopping Cart" />
+          <div class="quantity-in-cart quantity-in-cart-big">0</div>
+          <img class="header-end header-member" src="images/btn-member-01-normal.png" alt="Member" />
+        </div>
+      </div>
+      <div class="header-bottom"></div>
+    </header>
+
+    <section>
+      <!-- > 1000px -->
+      <div class="back-to-home">
+        <span>HOME</span>
+        <span> > </span>
+        <span>BAG</span>
+      </div>
+
+      <div class="title">
+        <div>購物車<span id="titleNumber"></span></div>
+        <!-- > 1000px -->
+        <ul class="ul-wrapper-big">
+          <li>數量</li>
+          <li>單價</li>
+          <li>小計</li>
+        </ul>
+      </div>
+
+      <div id="cartWrapper" class="cart-wrapper">
+        <!-- Carts -->
+      </div>
+
+      <div class="other-info-wrapper">
+        <div class="delivery-wrapper">
+          <div class="delivery-pair">
+            <div>配送國家</div>
+            <select>
+              <option>台灣及離島</option>
+              <option>大洋洲</option>
+              <option>北美州</option>
+              <option>歐州</option>
+            </select>
+          </div>
+          <div class="delivery-pair">
+            <div>付款方式</div>
+            <select id="payment">
+              <option value="cash_on_delivery">貨到付款</option>
+              <option value="atm">ATM轉帳</option>
+              <option value="credit_card">信用卡付款</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="reminder">
+          <div>※ 提醒您：</div>
+          <div>● 選擇宅配-請填寫正確收件人資訊，避免包裹配送不達</div>
+          <div>● 選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取</div>
+        </div>
+
+        <div class="title title-info">訂購資料</div>
+        <div class="order-info">
+          <div class="order-info-part order-info-name">
+            <div class="order-info-name-title">收件人姓名</div>
+            <div class="input-div input-name">
+              <input id="name" class="input-box" /><span class="pop-up-reminder"></span>
+              <div class="small-reminder">務必填寫完整收件人姓名，避免包裹無法順利簽收</div>
+            </div>
+          </div>
+          <div class="order-info-part">
+            <div>手機</div>
+            <div class="input-div">
+              <input id="phone" class="input-box" /><span class="pop-up-reminder"></span>
+            </div>
+          </div>
+          <div class="order-info-part">
+            <div>地址</div>
+            <div class="input-div">
+              <input id="address" class="input-box" /><span class="pop-up-reminder"></span>
+            </div>
+          </div>
+          <div class="order-info-part">
+            <div>Email</div>
+            <div class="input-div">
+              <input id="email" class="input-box" /><span class="pop-up-reminder"></span>
+            </div>
+          </div>
+          <div id="deliveryWrapper" class="order-info-part delivery-part">
+            <div class="delivery-title">配送時間</div>
+            <div>
+              <input class="delivery" type="radio" name="period" value="morning" /> <label>08:00-12:00</label>
+            </div>
+            <div>
+              <input class="delivery-time delivery" type="radio" name="period" value="afternoon" /> <label>14:00-18:00</label>
+            </div>
+            <div>
+              <input class="delivery-time delivery" type="radio" name="period" value="allday" /> <label>不指定</label>
+            </div>
+          </div>
+
+          <div class="title title-info">付款資料</div>
+          <div class="order-info-part">
+            <div>信用卡號碼 Card Number</div>
+            <div class="tpfield" id="card-number"></div>
+          </div>
+          <div class="order-info-part">
+            <div>有效期限 Expiry Date</div>
+            <div class="tpfield" id="card-expiration-date"></div>
+          </div>
+          <div class="order-info-part">
+            <div>安全碼 CCV</div>
+            <div class="tpfield" id="card-ccv"></div>
+          </div>
+
+       </div>
+       <div class="final-info">
+          <div>
+            <div class="final-info-part">
+              <div>總金額</div>
+              <div>NT.<span id=totalAmountSpan></span></div>
+            </div>
+            <div class="final-info-part freight">
+              <div>運費</div>
+              <div>NT.<span id="freightSpan">30</span></div>
+            </div>
+            <div class="final-info-part">
+              <div>應付金額</div>
+              <div>NT.<span id="finalAmountSpan">1800</span></div>
+            </div>
+
+          </div>
+          <button class="confirm-block">確認付款</button>
+      </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="about container">
+          <div class="about-link about-first">關於 Stylish</div>
+          <div class="about-link">服務條款</div>
+          <div class="about-link">隱私政策</div>
+          <div class="about-link">聯絡我們</div>
+          <div class="about-link about-last">FAQ</div>
+        </div>
+        <div class="sm-wrapper">
+          <img class="sm" src="images/btn-line-01-normal.png" alt="Line Icon" />
+          <img class="sm" src="images/btn-twitter-01-normal.png" alt="Twitter Icon" />
+          <img class="sm" src="images/btn-facebook-01-normal.png" alt="Facebook Icon" />
+        </div>
+      </div>
+      <div class="cr">
+        &copy 2018. All rights reserved.
+      </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.1.0"></script>
+    <script src="js/cart.js"></script>
+
+  </body>
+</html>
+
+<!-- Carts -->
+<!-- <div class="product-wrapper">
+  <div class="product-photo-detail-wrapper">
+    <img class="img" />
+    <div class="product-detail-wrapper">
+      <div class="product-detail">前開洋裝</div>
+      <div class="product-detail">0304</div>
+      <div class="product-type-wrapper">
+        <div class="product-type">顏色</div>
+        <div class="product-type-content">白</div>
+      </div>
+      <div class="product-type-wrapper">
+        <div class="product-type">尺寸</div>
+        <div class="product-type-content">M</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-info-wrapper">
+    <ul>
+      <li>數量</li>
+      <li>單價</li>
+      <li>小計</li>
+    </ul>
+    <div class="product-info">
+      <select>
+        <option>1</option>
+      </select>
+      <div>NT.590</div>
+      <div>NT.590</div>
+    </div>
+  </div>
+
+  <img class="delete" src="images/cart-remove.png"/>
+</div> -->
+
+<!-- <div class="product-wrapper">
+  <div class="product-photo-deatil-wrapper">
+    <img class="img" />
+    <div class="product-detail-wrapper">
+      <div class="product-detail">前開洋裝</div>
+      <div class="product-detail">0304</div>
+      <div class="product-type-wrapper">
+        <div class="product-type">顏色</div>
+        <div class="product-type-content">白</div>
+      </div>
+      <div class="product-type-wrapper">
+        <div class="product-type">尺寸</div>
+        <div class="product-type-content">M</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-info-wrapper">
+    <ul>
+      <li>數量</li>
+      <li>單價</li>
+      <li>小計</li>
+    </ul>
+    <div class="product-info">
+      <select>
+        <option>1</option>
+      </select>
+      <div>NT.590</div>
+      <div>NT.590</div>
+    </div>
+  </div>
+
+  <img class="delete" src="images/cart-remove.png"/>
+</div> -->

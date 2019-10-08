@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="thankyou.css" />
+    <title>感謝您的購買 - Stylish</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144849975-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144849975-1');
+  </script>
+
+  </head>
+  <body>
+    <div class="loading"></div>
+    <header>
+      <!--  < 768px -->
+      <div class="logo-search">
+        <input id="smallInput" type="text" name="keyword" />
+        <button id="smallCancelSearch">Back</button>
+        <a href="index.html">
+          <img id="smallLogo" class="logo" src="images/logo.png" alt="Stylish Logo"  />
+        </a>
+        <img id="smallSearch" class="search" src="images/search.png" alt="Search Icon" />
+      </div>
+      <div class="nav">
+        <nav class="container wrapper-categ">
+          <div id="categW" class="categ"><a href="index.html?categ=women">女裝</a></div>
+          <div id="categM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+          <div id="categA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+        </nav>
+        <div class="container wrapper-nav-info">
+          <div class="container shopping-cart" >
+            <img src="images/shopping-cart-normal.png" alt="Shopping Cart"/>
+            <div id="smallCart" class="nav-info">購物車
+              <div class="quantity-in-cart">0</div>
+            </div>
+          </div>
+          <div class="container member">
+            <img src="images/member-mobile.png" alt="Member"/>
+            <div class="nav-info" style="border-right: 0px;">會員</div>
+          </div>
+        </div>
+      </div>
+
+      <!--  > 768px -->
+      <div id="mediumSearchWrapper">
+        <input id="mediumInput" type="text" name="keyword" />
+        <button id="mediumCancelSearch">Back</button>
+      </div>
+      <div class="header">
+        <div class="header-left">
+          <a href="index.html">
+            <img id="mediumLogo" src="images/logo.png" alt="Stylish Logo"  />
+          </a>
+          <nav class="container">
+            <div id="categBW" class="categ" style="margin-left:20px;"><a href="index.html?categ=women">女裝</a></div>
+            <div id="categBM" class="categ"><a href="index.html?categ=men">男裝</a></div>
+            <div id="categBA" class="categ" style="border-right: 0px;"><a href="index.html?categ=accessories">配件</a></div>
+          </nav>
+        </div>
+        <div class="header-right">
+          <input id="bigInput" type="text" name="keyword">
+          <img id="mediumSearch" class="header-search" src="images/search.png"/>
+          <img id="bigCart" class="header-end header-cart" src="images/btn-shopping-cart-01-add.png" alt="Shopping Cart" />
+          <div class="quantity-in-cart quantity-in-cart-big">0</div>
+          <img class="header-end header-member" src="images/btn-member-01-normal.png" alt="Member" />
+        </div>
+      </div>
+      <div class="header-bottom"></div>
+    </header>
+
+    <section>
+      <div class="middle-page">
+        <div class="thankyou">
+          <div>Thank you<span> for ordering</span> from &nbsp<span class="strong">STYLiSH</span></div>
+        </div>
+        <div class="order-number-wrapper">
+          <div>Your order number is &nbsp<span class="order-number">12111111111</span></div>
+          <div>您的訂單編號為 &nbsp<span class="order-number">12111111111</span></div>
+        </div>
+        <div class="order-prepare-wrapper">
+          <div>我們將立即著手準備您的貨物</div>
+          <div>請耐心等待</div>
+        </div>
+        <div class="animation-wrapper">
+          <img class="package" src="images/package.png" />
+          <img class="home" src="images/home.png" />
+        </div>
+        <div id="keepShopping" class="back-button">繼續購物</div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="about container">
+          <div class="about-link about-first">關於 Stylish</div>
+          <div class="about-link">服務條款</div>
+          <div class="about-link">隱私政策</div>
+          <div class="about-link">聯絡我們</div>
+          <div class="about-link about-last">FAQ</div>
+        </div>
+        <div class="sm-wrapper">
+          <img class="sm" src="images/btn-line-01-normal.png" alt="Line Icon" />
+          <img class="sm" src="images/btn-twitter-01-normal.png" alt="Twitter Icon" />
+          <img class="sm" src="images/btn-facebook-01-normal.png" alt="Facebook Icon" />
+        </div>
+      </div>
+      <div class="cr">
+        &copy 2018. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/thankyou.js"></script>
+  </body>
+</html>

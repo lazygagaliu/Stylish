@@ -1,0 +1,284 @@
+/* Basic style */
+section {
+  font-family: NotoSansCJKtc;
+  color: #3f3a3a;
+}
+ul {
+  list-style-type:none;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1.2px solid black;
+  padding-bottom: 12px;
+}
+/* .title div {
+  line-height: 66px;
+} */
+.product-wrapper {
+  border-bottom: 1.2px solid black;
+}
+.img {
+  width:180px; height: 240px; /* temp */
+}
+.product-type {
+  border-right: 1px solid #3f3a3a;
+  padding-right: 10px;
+}
+.product-type-content {
+  margin-left: 6px;
+}
+ul, .product-info {
+  text-align: center;
+  line-height: 30px;
+}
+.product-info select, .delivery-wrapper select{
+  font-size: 16px;
+  color: #3f3a3a;
+}
+.other-info-wrapper, .cart-wrapper {
+  font-size: 16px;
+}
+.delivery-wrapper {
+  background-color: #e8e8e8;
+}
+.delivery-pair select{
+  width: 250px; height: 30px;
+}
+.small-reminder {
+  color: #8b572a;
+}
+.order-info {
+  border-bottom: 1.2px solid black;
+}
+.input-box {
+  height: 30px; width: 280px;
+  border-radius: 8px;
+  border: 1px solid #979797;
+}
+.pop-up-reminder {
+  color: firebrick;
+  font-style: italic;
+  font-size: 13px;
+}
+.delivery-part input{
+  vertical-align: middle;
+}
+.final-info {
+  line-height: 42px;
+}
+.final-info span{
+  font-size: 30px;
+}
+.freight {
+  border-bottom: 1px solid black;
+  padding-bottom: 16px;
+}
+.confirm-block {
+  background-color: black;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+/* Credit Card info */
+.tpfield {
+        height: 30px;
+        width: 300px;
+        border: 1px solid gray;
+        margin: 16px 0px;
+        padding: 5px;
+        border-radius: 8px;
+}
+
+/* Basic Layout */
+section {
+  width: 90%;
+  margin: 30px auto;
+}
+.back-to-home {
+  display: none;
+}
+.product-wrapper {
+  position: relative;
+  margin: 20px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1.2px solid black;
+}
+.delete {
+  position: absolute;
+  top: -8px; right: 0px;
+}
+.ul-wrapper-big {
+  display: none;
+}
+.title, .product-photo-detail-wrapper, .product-type-wrapper, ul, .product-info, .delivery-part, .final-info-part, .final-info {
+  display: flex;
+}
+.product-photo-detail-wrapper {
+  margin: 16px 0px;
+}
+.product-detail-wrapper {
+  margin: 0px 16px;
+}
+.product-detail {
+  margin-bottom: 30px;
+}
+.product-type-wrapper, .reminder {
+  margin: 16px 0px;
+  line-height: 28px;
+}
+ul, .product-info {
+  padding: 0px;
+  justify-content: space-around;
+}
+.product-info select, .product-info div {
+  width: 90px; height: 30px;
+}
+.delivery-wrapper {
+  padding: 2px 0px;
+}
+.delivery-pair {
+  margin: 14px 14px;
+}
+.delivery-pair div {
+ margin-bottom: 6px;
+}
+.order-info {
+  margin: 16px 0px;
+}
+.order-info-part {
+  margin: 16px 0px;
+}
+.order-info-part div {
+  margin: 8px 0px;
+}
+.delivery-part {
+  flex-wrap: wrap;
+}
+.delivery-title {
+  flex-basis: 100%;
+}
+.delivery-time{
+  margin-left: 30px;
+}
+label {
+  vertical-align: middle;
+}
+.final-info {
+  margin: 24px 0px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.final-info-part {
+  width:240px;
+  justify-content: space-between;
+  margin: 16px 0px;
+}
+.confirm-block {
+  width: 100%; height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media Query */
+@media (min-width:1000px) {
+  section{
+    max-width: 1200px;
+  }
+  .back-to-home {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .title, .product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: none;
+  }
+  .title {
+      padding: 0px 30px;
+  }
+  .title div {
+    margin-left: -30px;
+  }
+  .ul-wrapper-big, .product-info-wrapper {
+    display: flex;
+    flex-basis: 60%;
+  }
+  .product-info-wrapper ul {
+    display: none;
+  }
+  .product-info {
+    flex-basis: 100%;
+  }
+  .delete {
+    top: 112px; right: -13px;
+  }
+  .cart-wrapper {
+    border: 1px solid #979797;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+  }
+  .delivery-wrapper, .delivery-pair {
+    display: flex;
+    align-items: center;
+  }
+  .delivery-pair {
+    margin-right: 60px;
+  }
+  .delivery-pair div {
+    margin: 0px 28px 0px 0px;
+  }
+  .reminder {
+    margin-bottom: 40px;
+  }
+  .title-info {
+    padding: 0px 0px 16px 0px;
+    border-bottom: 1px solid black;
+  }
+  .order-info-part {
+    position: relative;
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .order-info-name {
+    align-items: flex-start;
+  }
+  .order-info-name-title {
+    padding-top: 5px;
+  }
+  .input-div {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .input-name {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .input-box {
+    display: block;
+    width: 500px;
+  }
+  .pop-up-reminder {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+  }
+  .delivery-part {
+    width: 700px;
+  }
+  .delivery-title {
+    flex-basis: 20%;
+  }
+  .small-reminder {
+    text-align: right;
+  }
+  .confirm-block {
+    width: 240px;
+  }
+}

@@ -1,0 +1,259 @@
+/* Basic Style */
+section {
+  font-family: NotoSansCJKtc-Regular;
+}
+.main-photo-img {
+  width: 100%;
+}
+h3, .pro-price, .pro-info-size {
+  font-size: 20px;
+  color: #3f3a3a;
+}
+h3 {
+  letter-spacing: 4px;
+  font-weight: normal;
+  margin: 20px 0px 0px 0px
+}
+.pro-info-wrapper p{
+  font-size: 16px;
+  color: #bababa;
+  letter-spacing: 3.2px;
+  margin: 0px 0px 20px 0px;
+}
+.pro-price {
+  border-bottom: 1px solid black;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+ul {
+  font-size: 14px;
+  color: #3f3a3a;
+  list-style-type: none;
+  padding: 0px;
+}
+.pro-info-colorsize {
+  border-right: 1px solid #979797;
+  padding-right: 12px;
+}
+.pro-info-colorblock {
+  width: 36px; height: 36px;
+  border: 5px solid #ffffff;
+}
+.pro-info-size {
+  width: 34px; height: 34px;
+  background-color: #ececec;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+}
+.li-number, .number, .size-reminder {
+  height: 44px;
+}
+.li-number, .number {
+  border: 1px solid #979797;
+  font-family: ArialMT;
+  font-size: 20px; color: #8b572a;
+  letter-spacing: 4px;
+}
+.li-number img, .number img {
+  cursor: pointer;
+}
+/* .size-reminder,  */
+.addto-cart {
+  background-color: black;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  line-height: 30px;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+}
+/* .addto-cart {
+  display: none;
+} */
+.pro-note {
+  font-size: 14px;
+  color: #3f3a3a;
+}
+
+.details {
+  font-size: 16px;
+  color: #8b572a;
+  letter-spacing: 3.2px;
+  line-height: 30px;
+}
+.details-line {
+  border-bottom: 1px solid #3f3a3a;
+  width: 63%;
+  height: 15px;
+}
+.details-story {
+  font-size: 14px;
+  color: #3f3a3a;
+  line-height: 24px;
+}
+.details-story p {
+  margin: 20px 0px;
+}
+.story-photo {
+  width: 100%;
+}
+
+/* Basic Layout */
+.pro-info-wrapper {
+  width: 85%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section {
+  margin-bottom: 40px;
+}
+.pro-description {
+  width: 85%;
+  margin: 0px auto;
+}
+.ul-row {
+  display: flex;
+  align-items: center;
+}
+.ul-row li {
+  margin: 4px 16px 4px 0px;
+}
+.ul-number {
+  display: none;
+}
+.li-number, .number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin: 15px 0px;
+}
+.pro-note {
+  margin-top: 24px;
+}
+.ul-column {
+  margin: 20px 0px;
+}
+.ul-column li {
+  margin: 4px 0px;
+}
+.pro-des-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hover Style */
+.pro-info-colorblock:hover {
+  box-shadow: 0px 0px 1px #cfcfcf;
+}
+.pro-info-size:hover{
+  background-color: black;
+  color: white;
+}
+.pro-info-colorblock-remove:hover {
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.pro-info-size-remove:hover{
+  background-color: #ececec;
+  color: #3f3a3a;
+}
+
+/* Function Related Style */
+.pro-info-colorblock-selected {
+  box-shadow: 0px 0px 1px #cfcfcf;
+}
+.pro-info-size-selected{
+  background-color: black;
+  color: white;
+}
+
+/* Media query */
+@media (min-width:768px) {
+  .details-line {
+    width: 75%;
+  }
+}
+
+@media (min-width:1000px) {
+  .pro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: 40px auto;
+    justify-content: center;
+  }
+  .main-photo, .pro-info-wrapper {
+    flex-basis: 470px;
+    margin: 0px 28px;
+  }
+  .main-photo-img {
+    width: 100%;
+  }
+  h3 {
+    margin: 0px;
+  }
+  .pro-price {
+    margin-bottom: 3px;
+  }
+  .ul-number {
+    display: flex;
+    margin: 13px 0px;
+  }
+  .number {
+    display: none;
+  }
+  .li-number {
+    width: 180px;
+    margin:0px;
+  }
+  .size-reminder {
+    display: none;
+  }
+  .addto-cart {
+    display: block;
+    margin-top: 8px;
+  }
+  .pro-description {
+    width: 87%;
+    margin: 0px auto;
+  }
+  .details-line {
+    width: 80%;
+  }
+  .story-photo {
+    width: 600px;
+  }
+
+/* Adjust the font-size */
+  h3, .pro-price, .pro-info-size {
+    font-size: 24px;
+  }
+  .pro-info-wrapper p{
+    font-size: 20px;
+  }
+  ul {
+    font-size: 18px;
+  }
+  .size-reminder, .addto-cart {
+    font-size: 20px;
+  }
+  .pro-note {
+    font-size: 18px;
+    color: #3f3a3a;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+  .details-story {
+    font-size: 18px;
+    color: #3f3a3a;
+    line-height: 24px;
+  }
+
+}
