@@ -16,6 +16,7 @@ section {
   background-image: radial-gradient(
     circle at top right, #f2eded 0%, #bcc1c7 70%);
   );
+  font-family: AlegreyaSansSC-Light;
 }
 .thankyou, .order-number-wrapper, .order-prepare-wrapper {
   text-align: center;
