@@ -1,6 +1,6 @@
 /* Basic Style */
 section {
-  font-family: NotoSansCJKtc-Regular;
+  font-family: PingFangTC-Thin;
 }
 .main-photo-img {
   width: 100%;
@@ -51,7 +51,7 @@ ul {
 }
 .li-number, .number {
   border: 1px solid #979797;
-  font-family: ArialMT;
+  font-family: PingFangTC-Thin;
   font-size: 20px; color: #8b572a;
   letter-spacing: 4px;
 }
