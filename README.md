@@ -14,25 +14,21 @@ Web Link : https://lazygagaliu.github.io/Stylish
 
 #### Main Page
 ![](https://i.imgur.com/N4dughn.gif)
-<br />
+<br /><br />
 
 #### Product Page
 ![](https://i.imgur.com/WAdecsq.gif)
-<br />
+<br /><br />
 
 #### Cart Page
 ![](https://i.imgur.com/3rK0Tsy.gif)
-<br />
+<br /><br />
 
 
 #### Thankyou Page
 ![](https://i.imgur.com/wtiwruC.gif)
-<br />
+<br /><br />
 
 
 #### Profile Page
 ![](https://i.imgur.com/9eNomlF.gif)
-
-
-
-
